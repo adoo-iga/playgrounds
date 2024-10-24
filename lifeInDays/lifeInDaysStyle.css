@@ -1,0 +1,41 @@
+.day {
+    height: 1rem;
+    width: 1rem;
+    background-color: yellow;
+    margin: 1px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: relative;
+}
+
+.day::before {
+    position: absolute;
+    content: "";
+    top: 0.075rem;
+    left: 0.075rem;
+    height: 0.25rem;
+    width: 0.25rem;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.day-lived {
+    background-color: green;
+}
+
+.days-left {
+    background-color: red;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breakline {
+    width: 100%;
+    background: #000;
+    height: 0.125rem;
+    margin-block: 1rem;
+}
